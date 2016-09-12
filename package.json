@@ -14,7 +14,7 @@
   "homepage": "https://github.com/vijithassar/d3-parent",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vijuithassar/d3-parent.git"
+    "url": "https://github.com/vijithassar/d3-parent.git"
   },
   "scripts": {
     "lint": "eslint --config eslintrc.json src/*.js && eslint --config eslintrc.json test/*.js",
