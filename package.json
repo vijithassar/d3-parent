@@ -1,0 +1,36 @@
+{
+  "name": "d3-parent",
+  "version": "2.0.0",
+  "description": "select parent nodes",
+  "keywords": [
+    "d3",
+    "d3-module",
+    "dom",
+    "selection"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "build/d3-parent.js",
+  "jsnext:main": "index",
+  "homepage": "https://github.com/vijithassar/d3-parent",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vijuithassar/d3-parent.git"
+  },
+  "scripts": {
+    "lint": "eslint --config eslintrc.json src/*.js && eslint --config eslintrc.json test/*.js",
+    "pretest": "rm -rf build && mkdir build && rollup -g d3-selection:d3,d3-parent:d3 -f umd -n d3 -o build/d3-parent.js -- index.js && npm run lint",
+    "test": "tape 'test/**/*-test.js'",
+    "prepublish": "npm run test && uglifyjs build/d3-parent.js -c -m -o build/d3-parent.min.js",
+    "postpublish": "zip -j build/d3-parent.zip -- LICENSE README.md build/d3-parent.js build/d3-parent.min.js"
+  },
+  "dependencies": {
+    "d3-selection": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.3.1",
+    "jsdom": "^9.4.2",
+    "rollup": "0.27",
+    "tape": "4",
+    "uglify-js": "2"
+  }
+}
