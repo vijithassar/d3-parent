@@ -2,6 +2,8 @@
 
 An inversion of d3.select which searches up through the DOM hierarchy instead of down, like a D3 equivalent of the [.parents() method](https://api.jquery.com/parents/) from jQuery. Provides a more stable and robust API around parentNode, simplifies traversal of deeply nested hierarchical data joins, and allows inverted manipulation of data binds.
 
+[demonstration](https://bl.ocks.org/vijithassar/2b1bf939d3c5a4ae2a824f3973364363)
+
 ## Setup
 
 Load this script after D3.js but before your project code.
@@ -30,7 +32,7 @@ Optionally provide a selector string to iterate upward through the DOM until a m
 
 ```js
   var list_items_links = d3.selectAll('a');
-  var list = list_items.parent('ul');  
+  var list = list_items.parent('ul');
 ```
 
 Method calls can be chained together to traverse upward in steps:
