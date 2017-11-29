@@ -39,6 +39,7 @@
         "newline-per-chained-call": ["error", {"ignoreChainWithDepth": 3}],
         "no-console": ["error", { "allow": ["warn", "error"] }],
         "no-debugger": "error",
+        "no-global-assign": ["error", {"exceptions": ["document"]}],
         "no-use-before-define": "error",
         "no-unused-vars": ["error", {"args": "none"}],
         "no-native-reassign": ["error", {"exceptions": ["document"]}]
