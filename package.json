@@ -1,6 +1,6 @@
 {
   "name": "d3-parent",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "Vijith Assar",
   "description": "select parent nodes",
   "keywords": [
@@ -32,6 +32,6 @@
     "jsdom": "^9.4.2",
     "rollup": "0.27",
     "tape": "4",
-    "uglify-js": "2"
+    "uglify-js": "2.6"
   }
 }
